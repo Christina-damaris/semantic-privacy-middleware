@@ -1,0 +1,150 @@
+{
+  "_meta": {
+    "actions": ["keep", "tokenize", "encrypt", "block", "context_dependent"],
+    "note": "context_dependent entries use default_if_uncertain until intent-aware logic (Phase 2) is added"
+  },
+
+  "PERSONAL_IDENTITY": {
+    "action": "tokenize",
+    "risk": "medium",
+    "entities": ["NAME", "FULL_NAME", "FIRST_NAME", "LAST_NAME", "FATHER_NAME", "MOTHER_NAME", "DATE_OF_BIRTH", "AGE", "GENDER", "NATIONALITY", "RELIGION", "MARITAL_STATUS", "BLOOD_GROUP", "PHOTO", "SIGNATURE"],
+    "reasoning": "Rarely needed verbatim for the AI to complete a task"
+  },
+
+  "CONTACT_INFO": {
+    "action": "tokenize",
+    "risk": "medium",
+    "entities": ["EMAIL", "PHONE_NUMBER", "PHYSICAL_ADDRESS", "IP_ADDRESS"],
+    "reasoning": "Contact details rarely affect response quality"
+  },
+
+  "GOVERNMENT_ID": {
+    "action": "block",
+    "risk": "high",
+    "entities": ["AADHAAR", "PAN", "PASSPORT", "DRIVING_LICENSE", "VOTER_ID", "GSTIN", "TIN", "SSN", "NATIONAL_ID", "RATION_CARD"],
+    "reasoning": "No legitimate AI task requires the raw ID number itself"
+  },
+
+  "FINANCIAL_INFO": {
+    "action": "encrypt",
+    "risk": "high",
+    "entities": ["BANK_ACCOUNT_NUMBER", "IFSC", "SWIFT", "CREDIT_CARD", "DEBIT_CARD", "CVV", "EXPIRY_DATE", "UPI_ID", "IBAN", "WALLET_ID", "TRANSACTION_ID"],
+    "reasoning": "Structured, sometimes needed in obfuscated form for validation-type tasks"
+  },
+
+  "AUTHENTICATION": {
+    "action": "block",
+    "risk": "critical",
+    "entities": ["PASSWORD", "PIN", "OTP", "SECRET", "PRIVATE_KEY", "PUBLIC_KEY", "API_KEY", "BEARER_TOKEN", "JWT", "OAUTH_TOKEN", "REFRESH_TOKEN", "COOKIE", "SESSION_ID", "ENCRYPTION_KEY", "VAULT_SECRET"],
+    "reasoning": "Never has a legitimate reason to reach a third-party AI"
+  },
+
+  "EMPLOYEE_DATA": {
+    "action": "encrypt",
+    "risk": "high",
+    "entities": ["EMPLOYEE_ID", "EMPLOYEE_NAME", "SALARY", "JOINING_DATE", "MANAGER", "DEPARTMENT", "ROLE", "PERFORMANCE_REVIEW", "ATTENDANCE", "PAYROLL", "PROMOTION", "RESIGNATION"],
+    "reasoning": "Sensitive HR context, sometimes needed (e.g. drafting a review) - encryption keeps it reversible"
+  },
+
+  "CUSTOMER_DATA": {
+    "action": "encrypt",
+    "risk": "high",
+    "entities": ["CUSTOMER_ID", "CRM_NUMBER", "CUSTOMER_NAME", "CUSTOMER_ADDRESS", "CUSTOMER_EMAIL", "CUSTOMER_PHONE", "PURCHASE_HISTORY", "ORDER_HISTORY", "SUBSCRIPTION", "SUPPORT_TICKET"],
+    "reasoning": "Often needed in context (e.g. support-ticket drafting) but must stay reversible and controlled"
+  },
+
+  "HEALTH_DATA": {
+    "action": "context_dependent",
+    "default_if_uncertain": "keep",
+    "risk": "high",
+    "entities": ["DIAGNOSIS", "PRESCRIPTION", "MEDICINE", "DOCTOR", "HOSPITAL", "PATIENT_ID", "MEDICAL_REPORT", "XRAY", "MRI", "LAB_REPORT", "INSURANCE_CLAIM"],
+    "reasoning": "Diagnosis/medication info is very often the actual substance of the AI request"
+  },
+
+  "LEGAL_DATA": {
+    "action": "context_dependent",
+    "default_if_uncertain": "keep",
+    "risk": "high",
+    "entities": ["AGREEMENT", "CONTRACT", "NDA", "LEGAL_NOTICE", "SETTLEMENT", "ARBITRATION", "PATENT", "TRADEMARK", "COPYRIGHT", "LICENSE"],
+    "reasoning": "Legal analysis tasks usually require the actual clause/document content"
+  },
+
+  "SOURCE_CODE": {
+    "action": "keep",
+    "risk": "critical_embedded_secrets_low_structure",
+    "entities": ["PYTHON", "JAVA", "CPP", "CSHARP", "JAVASCRIPT", "REACT", "FLUTTER", "NODEJS", "SPRING", "DJANGO", "FASTAPI", "SQL_QUERY", "STORED_PROCEDURE"],
+    "reasoning": "Code structure/logic is usually the point of the request; embedded secrets are blocked separately by AUTHENTICATION/DATABASE_INFO/CLOUD_CREDENTIALS categories before this rule applies"
+  },
+
+  "DATABASE_INFO": {
+    "action": "block",
+    "risk": "critical",
+    "entities": ["DATABASE", "SQL", "MONGODB", "REDIS", "POSTGRESQL", "MYSQL", "CONNECTION_STRING", "ENVIRONMENT_VARIABLE", "ENV_FILE", "DOCKER_SECRET", "KUBERNETES_SECRET", "CONFIG_FILE"],
+    "reasoning": "Connection strings/env files nearly always embed credentials"
+  },
+
+  "INFRASTRUCTURE": {
+    "action": "block",
+    "risk": "critical",
+    "entities": ["HOSTNAME", "SERVER", "FIREWALL", "VPN", "SSH", "IP_ADDRESS", "PORT", "DNS", "LOAD_BALANCER", "CLOUD", "AWS", "AZURE", "GCP", "IAM", "S3_BUCKET", "EC2", "LAMBDA"],
+    "reasoning": "Reveals attack surface / internal topology if leaked"
+  },
+
+  "BUSINESS_STRATEGY": {
+    "action": "encrypt",
+    "risk": "high",
+    "entities": ["ROADMAP", "ACQUISITION_PLAN", "PRODUCT_STRATEGY", "MERGER", "PLANNING", "BUSINESS_PLAN"],
+    "reasoning": "Competitively sensitive, but sometimes AI needs the content to help draft/refine"
+  },
+
+  "FINANCIAL_REPORT": {
+    "action": "encrypt",
+    "risk": "high",
+    "entities": ["REVENUE", "PROFIT", "LOSS", "FORECAST", "BUDGET", "INVOICE", "PURCHASE_ORDER", "BONUS", "TAX"],
+    "reasoning": "Needed for financial-analysis tasks, but must never leave the org unprotected"
+  },
+
+  "INTELLECTUAL_PROPERTY": {
+    "action": "encrypt",
+    "risk": "critical",
+    "entities": ["ALGORITHM", "RESEARCH", "PATENT", "FORMULA", "BLUEPRINT", "ARCHITECTURE", "PROTOTYPE", "DESIGN_DOCUMENT", "TRADE_SECRET"],
+    "reasoning": "Sometimes genuinely needed for AI assistance, but the highest-value org data - must be tightly protected and short-TTL"
+  },
+
+  "COMPANY_CONFIDENTIAL": {
+    "action": "context_dependent",
+    "default_if_uncertain": "keep",
+    "risk": "high",
+    "entities": ["CONFIDENTIAL", "INTERNAL_ONLY", "RESTRICTED", "PRIVATE", "BOARD_MEETING", "ROADMAP", "ACQUISITION", "MERGER", "STRATEGY", "FORECAST"],
+    "reasoning": "Broad catch-all; sensitivity varies heavily by actual content, not just the label"
+  },
+
+  "CLOUD_CREDENTIALS": {
+    "action": "block",
+    "risk": "critical",
+    "entities": ["AWS_ACCESS_KEY", "AWS_SECRET_KEY", "AZURE_KEY", "GCP_SERVICE_ACCOUNT_KEY"],
+    "reasoning": "Direct infrastructure compromise risk if leaked"
+  },
+
+  "CRYPTO_KEYS": {
+    "action": "block",
+    "risk": "critical",
+    "entities": ["RSA_KEY", "SSH_KEY", "CERTIFICATE", "PRIVATE_KEY_FILE"],
+    "reasoning": "Same as cloud credentials - irreversible compromise risk"
+  },
+
+  "AI_LLM_SPECIFIC": {
+    "action": "context_dependent",
+    "default_if_uncertain": "keep",
+    "risk": "medium_high",
+    "entities": ["PROMPT", "SYSTEM_PROMPT", "EMBEDDING", "FINE_TUNING_DATA", "TRAINING_DATASET", "VECTOR_DATABASE", "RAG", "KNOWLEDGE_BASE", "PROMPT_TEMPLATE", "CONTEXT_WINDOW", "MODEL_WEIGHTS", "INFERENCE_ENDPOINT"],
+    "reasoning": "A company's own system prompts / fine-tuning data are proprietary IP, but often exactly what the user is asking about"
+  },
+
+  "PUBLIC_INFORMATION": {
+    "action": "keep",
+    "risk": "low",
+    "entities": ["PUBLIC_DOCUMENTATION", "BLOG_POST", "PRESS_RELEASE", "MARKETING_COPY"],
+    "reasoning": "Already public - no protection needed, would only degrade response quality"
+  }
+}
