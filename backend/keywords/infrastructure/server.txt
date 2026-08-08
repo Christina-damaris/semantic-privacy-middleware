@@ -1,0 +1,27 @@
+server
+server room
+server infrastructure
+web server
+application server
+database server
+mail server
+file server
+proxy server
+reverse proxy
+load balancer
+gateway
+api gateway
+web server
+host
+hostname
+host machine
+virtual machine
+VM
+container
+docker
+kubernetes
+k8s
+cluster
+node
+compute node
+server node

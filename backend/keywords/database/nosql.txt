@@ -1,0 +1,30 @@
+NoSQL
+NoSQL database
+document database
+key value database
+key-value database
+graph database
+wide column database
+document store
+key value store
+MongoDB
+Mongo
+Redis
+Cassandra
+CouchDB
+DynamoDB
+Firestore
+Cosmos DB
+Neo4j
+Elasticsearch
+collection
+document
+database collection
+database document
+partition key
+sort key
+shard
+sharding
+replica
+replication
+database cluster

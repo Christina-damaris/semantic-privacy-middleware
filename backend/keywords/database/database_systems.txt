@@ -1,0 +1,30 @@
+database
+database system
+database server
+database management system
+DBMS
+RDBMS
+relational database
+relational database management system
+MySQL
+PostgreSQL
+Postgres
+Oracle Database
+Oracle
+Microsoft SQL Server
+SQL Server
+SQLite
+MariaDB
+MongoDB
+Redis
+Cassandra
+CouchDB
+DynamoDB
+Neo4j
+Elasticsearch
+Firebase
+Firestore
+Supabase
+CockroachDB
+Snowflake
+Databricks

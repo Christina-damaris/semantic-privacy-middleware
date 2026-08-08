@@ -1,0 +1,31 @@
+prompt injection
+prompt injections
+indirect prompt injection
+direct prompt injection
+jailbreak
+jailbreaking
+AI jailbreak
+LLM jailbreak
+prompt attack
+prompt attacks
+prompt manipulation
+prompt tampering
+instruction injection
+instruction manipulation
+system prompt
+system instruction
+hidden instruction
+malicious prompt
+adversarial prompt
+adversarial input
+prompt poisoning
+context poisoning
+context injection
+instruction override
+ignore previous instructions
+ignore previous instruction
+bypass instructions
+bypass safety
+safety bypass
+model manipulation
+LLM manipulation

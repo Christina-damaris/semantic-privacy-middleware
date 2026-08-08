@@ -1,0 +1,30 @@
+model name
+model ID
+model identifier
+model version
+model configuration
+model parameters
+model architecture
+model weights
+model checkpoint
+model checkpoint file
+model configuration file
+model endpoint
+model URL
+model deployment
+model deployment ID
+model provider
+AI provider
+LLM provider
+foundation model
+model context
+context window
+context length
+token limit
+maximum tokens
+temperature
+top p
+top-p
+top k
+sampling parameters
+generation parameters

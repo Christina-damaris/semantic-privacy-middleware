@@ -31,7 +31,7 @@ for entity_name, (folder, filename) in HEALTH_FILES.items():
         folder=folder,
         filename=filename
     )
-
+    print(entity_name, len(keywords))
     recognizer = create_keyword_recognizer(
         entity_name=entity_name,
         keywords=keywords,

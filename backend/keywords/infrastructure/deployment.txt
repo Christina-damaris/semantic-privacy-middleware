@@ -1,0 +1,26 @@
+deployment
+production
+production environment
+staging
+staging environment
+development environment
+test environment
+deployment pipeline
+CI
+CD
+CI/CD
+continuous integration
+continuous deployment
+build pipeline
+release pipeline
+release
+deployment server
+deployment configuration
+infrastructure as code
+IaC
+Terraform
+Ansible
+Jenkins
+GitHub Actions
+Docker Compose
+Kubernetes deployment

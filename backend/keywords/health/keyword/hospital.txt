@@ -1,0 +1,43 @@
+hospital
+clinic
+medical center
+medical centre
+health center
+health centre
+healthcare center
+healthcare centre
+medical facility
+healthcare facility
+emergency room
+emergency department
+outpatient department
+outpatient clinic
+inpatient department
+trauma center
+trauma centre
+maternity hospital
+children's hospital
+pediatric hospital
+paediatric hospital
+specialty hospital
+speciality hospital
+teaching hospital
+university hospital
+general hospital
+private hospital
+public hospital
+government hospital
+community hospital
+Apollo Hospitals
+Fortis Healthcare
+AIIMS
+All India Institute of Medical Sciences
+Christian Medical College
+CMC
+Max Healthcare
+Manipal Hospitals
+Narayana Health
+Kokilaben Hospital
+Medanta
+Artemis Hospital
+Columbia Asia

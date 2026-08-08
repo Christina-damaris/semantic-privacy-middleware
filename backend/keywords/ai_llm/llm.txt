@@ -1,0 +1,37 @@
+LLM
+large language model
+language model
+generative AI
+generative artificial intelligence
+artificial intelligence
+AI model
+AI system
+AI assistant
+AI chatbot
+AI agent
+AI application
+AI service
+foundation model
+base model
+multimodal model
+transformer
+transformer model
+neural language model
+embedding model
+embedding
+vector embedding
+vector database
+RAG
+retrieval augmented generation
+retrieval-augmented generation
+fine tuning
+fine-tuning
+fine tuned model
+fine-tuned model
+inference
+model inference
+model training
+model deployment
+model serving
+model endpoint
+AI inference

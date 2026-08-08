@@ -1,0 +1,28 @@
+configuration
+configuration file
+configuration settings
+application configuration
+server configuration
+database configuration
+environment configuration
+deployment configuration
+system configuration
+config file
+config
+environment variable
+environment variables
+.env
+YAML configuration
+JSON configuration
+XML configuration
+Dockerfile
+docker compose
+docker-compose
+Kubernetes configuration
+Kubernetes manifest
+deployment manifest
+configuration parameter
+configuration value
+application settings
+system settings
+runtime configuration

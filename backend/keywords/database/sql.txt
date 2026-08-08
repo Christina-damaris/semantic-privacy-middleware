@@ -1,0 +1,54 @@
+SQL
+structured query language
+SELECT
+INSERT
+UPDATE
+DELETE
+CREATE
+ALTER
+DROP
+TRUNCATE
+MERGE
+JOIN
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+FULL JOIN
+CROSS JOIN
+UNION
+UNION ALL
+GROUP BY
+ORDER BY
+HAVING
+WHERE
+FROM
+WHERE clause
+SQL query
+SQL statement
+SQL command
+stored procedure
+database procedure
+trigger
+database trigger
+view
+database view
+index
+database index
+primary key
+foreign key
+unique key
+composite key
+constraint
+database constraint
+schema
+database schema
+table
+database table
+column
+database column
+row
+database row
+transaction
+database transaction
+commit
+rollback

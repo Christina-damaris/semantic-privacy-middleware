@@ -1,0 +1,55 @@
+doctor
+dr
+dr.
+physician
+medical doctor
+medical practitioner
+practitioner
+clinician
+surgeon
+specialist
+consultant
+general physician
+general practitioner
+gp
+family physician
+family doctor
+internist
+cardiologist
+neurologist
+neurosurgeon
+orthopedic
+orthopaedic
+orthopedic surgeon
+orthopaedic surgeon
+dermatologist
+psychiatrist
+psychologist
+pediatrician
+paediatrician
+gynecologist
+gynaecologist
+obstetrician
+oncologist
+radiologist
+pathologist
+anesthesiologist
+anaesthesiologist
+dentist
+orthodontist
+ophthalmologist
+optometrist
+urologist
+nephrologist
+endocrinologist
+gastroenterologist
+pulmonologist
+rheumatologist
+hematologist
+haematologist
+immunologist
+infectious disease specialist
+ENT specialist
+otolaryngologist
+veterinarian
+vet

@@ -17,13 +17,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[3]
 OUTPUT_FILE = (
     PROJECT_ROOT
     / "backend"
-    / "detection"
     / "keywords"
     / "health"
     / "dictionary"
     / "diagnosis.txt"
 )
-
 diagnoses = set()
 
 with open(SOURCE_FILE, "r", encoding="utf-8") as file:

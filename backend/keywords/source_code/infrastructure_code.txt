@@ -1,0 +1,31 @@
+infrastructure as code
+IaC
+Terraform
+Terraform configuration
+Terraform script
+Terraform state
+Ansible
+Ansible playbook
+CloudFormation
+CloudFormation template
+ARM template
+Bicep
+Kubernetes manifest
+Kubernetes YAML
+Dockerfile
+Docker Compose
+docker-compose.yml
+deployment script
+deployment configuration
+CI pipeline
+CD pipeline
+CI/CD pipeline
+GitHub Actions
+GitLab CI
+Jenkins pipeline
+build script
+release script
+deployment script
+infrastructure configuration
+cloud configuration
+cloud deployment

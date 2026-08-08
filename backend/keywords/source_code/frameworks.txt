@@ -1,0 +1,32 @@
+framework
+software framework
+web framework
+backend framework
+frontend framework
+React
+ReactJS
+Angular
+Vue
+VueJS
+Django
+Flask
+FastAPI
+Spring
+Spring Boot
+Express
+Node.js
+NodeJS
+Next.js
+NextJS
+Flutter
+React Native
+TensorFlow
+PyTorch
+Keras
+scikit-learn
+OpenCV
+LangChain
+LangGraph
+Hugging Face
+Transformers
+Ultralytics

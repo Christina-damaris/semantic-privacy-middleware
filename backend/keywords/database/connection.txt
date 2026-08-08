@@ -1,0 +1,24 @@
+database connection
+database connection string
+database URL
+database URI
+connection string
+connection URL
+connection URI
+JDBC
+ODBC
+JDBC URL
+ODBC connection
+database host
+database hostname
+database port
+database endpoint
+database endpoint URL
+database connection pool
+connection pool
+database client
+database driver
+database connection parameters
+connection parameters
+connection configuration
+database configuration

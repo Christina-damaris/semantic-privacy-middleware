@@ -1,0 +1,49 @@
+source code
+source files
+source code repository
+codebase
+code base
+programming code
+program code
+application code
+software code
+backend code
+frontend code
+algorithm
+function
+method
+class
+interface
+module
+library
+package
+dependency
+variable
+constant
+function definition
+class definition
+API implementation
+API code
+database code
+SQL code
+script
+programming script
+Python
+Java
+JavaScript
+TypeScript
+C
+C++
+C#
+Go
+Golang
+Rust
+PHP
+Ruby
+Kotlin
+Swift
+HTML
+CSS
+JSON
+XML
+YAML

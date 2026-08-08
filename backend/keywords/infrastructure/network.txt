@@ -1,0 +1,38 @@
+network
+network infrastructure
+computer network
+private network
+public network
+local network
+LAN
+WAN
+VLAN
+VPN
+subnet
+subnet mask
+gateway
+router
+switch
+firewall
+network firewall
+network interface
+NIC
+DNS
+DNS server
+DHCP
+IP address
+MAC address
+port
+TCP
+UDP
+HTTP
+HTTPS
+SSH
+FTP
+SFTP
+TLS
+SSL
+network endpoint
+endpoint
+network traffic
+network connection

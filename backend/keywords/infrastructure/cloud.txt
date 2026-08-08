@@ -1,0 +1,30 @@
+cloud
+cloud infrastructure
+cloud service
+cloud computing
+cloud environment
+cloud platform
+cloud account
+cloud resource
+cloud instance
+cloud storage
+cloud server
+cloud database
+cloud network
+cloud workload
+AWS
+Amazon Web Services
+Azure
+Microsoft Azure
+Google Cloud
+GCP
+EC2
+S3
+Lambda
+CloudFront
+RDS
+DynamoDB
+ECS
+EKS
+AKS
+GKE

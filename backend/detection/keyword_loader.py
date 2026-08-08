@@ -1,10 +1,6 @@
 from pathlib import Path
 
-# ==========================================================
-# Root folder containing all keyword categories
-# ==========================================================
-
-KEYWORD_ROOT = Path(__file__).parent / "keywords"
+KEYWORD_ROOT = Path(__file__).resolve().parents[1] / "keywords"
 
 
 def load_keywords(category: str, folder: str, filename: str):
