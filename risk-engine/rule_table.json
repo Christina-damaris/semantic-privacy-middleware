@@ -14,7 +14,7 @@
   "CONTACT_INFO": {
     "action": "tokenize",
     "risk": "medium",
-    "entities": ["EMAIL", "PHONE_NUMBER", "PHYSICAL_ADDRESS", "IP_ADDRESS"],
+    "entities": ["EMAIL", "PHONE_NUMBER", "PHYSICAL_ADDRESS"],
     "reasoning": "Contact details rarely affect response quality"
   },
 
@@ -65,7 +65,7 @@
     "action": "context_dependent",
     "default_if_uncertain": "keep",
     "risk": "high",
-    "entities": ["AGREEMENT", "CONTRACT", "NDA", "LEGAL_NOTICE", "SETTLEMENT", "ARBITRATION", "PATENT", "TRADEMARK", "COPYRIGHT", "LICENSE"],
+    "entities": ["AGREEMENT", "CONTRACT", "NDA", "LEGAL_NOTICE", "SETTLEMENT", "ARBITRATION", "TRADEMARK", "COPYRIGHT", "LICENSE"],
     "reasoning": "Legal analysis tasks usually require the actual clause/document content"
   },
 
@@ -93,7 +93,7 @@
   "BUSINESS_STRATEGY": {
     "action": "encrypt",
     "risk": "high",
-    "entities": ["ROADMAP", "ACQUISITION_PLAN", "PRODUCT_STRATEGY", "MERGER", "PLANNING", "BUSINESS_PLAN"],
+    "entities": ["ACQUISITION_PLAN", "PRODUCT_STRATEGY", "PLANNING", "BUSINESS_PLAN", "ROADMAP", "MERGER"],
     "reasoning": "Competitively sensitive, but sometimes AI needs the content to help draft/refine"
   },
 
@@ -115,7 +115,7 @@
     "action": "context_dependent",
     "default_if_uncertain": "keep",
     "risk": "high",
-    "entities": ["CONFIDENTIAL", "INTERNAL_ONLY", "RESTRICTED", "PRIVATE", "BOARD_MEETING", "ROADMAP", "ACQUISITION", "MERGER", "STRATEGY", "FORECAST"],
+    "entities": ["CONFIDENTIAL", "INTERNAL_ONLY", "RESTRICTED", "PRIVATE", "BOARD_MEETING", "ACQUISITION", "STRATEGY"],
     "reasoning": "Broad catch-all; sensitivity varies heavily by actual content, not just the label"
   },
 
